@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/public')); //directly at the root of the se
 app.get('/about', middleware.requireAuthentication, function(req, res){   //route to the file, function
     //req user input, cookies, data
     //res, data back to user
-    res.send('About us');
+    res.send('About us!');
 });
 
 
